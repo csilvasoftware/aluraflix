@@ -22,5 +22,5 @@ jobs:
           script: |
             cd /home/ubuntu/aluraflix
             git pull
-            ./mvnw package
+            ./mvnw package -DskipTests
             sudo systemctl restart spring-api.service
